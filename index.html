@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <form class="card" id="form">
+    <h1>Create Account</h1>
+
+    <div class="input-group">
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="Email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <div class="password-row">
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <span id="togglePassword" class="eye">👁</span>
+        <button type="button" id="btn">Generate</button>
+      </div>
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="numbers"> Include Numbers</label>
+      <label><input type="checkbox" id="UppercaseLetters"> Include Uppercase</label>
+      <label><input type="checkbox" id="LowercaseLetters"> Include Lowercase</label>
+      <label><input type="checkbox" id="Symbols"> Include Symbols</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Sign Up</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
